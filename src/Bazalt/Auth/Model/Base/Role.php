@@ -22,6 +22,7 @@ abstract class Role extends \Bazalt\ORM\Record
         $this->hasColumn('is_guest', 'U:tinyint(1)|0');
         $this->hasColumn('system_acl', 'U:tinyint(1)|0');
         $this->hasColumn('is_hidden', 'U:tinyint(1)|0');
+        $this->hasColumn('duplicate_id', 'UN:int(10)');
     }
 
     public function initRelations()
